@@ -1,0 +1,316 @@
+problem 1 ans:
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a%2==0)
+    {
+        printf("It is an even number.");
+        
+    }
+    else if(a%2!=0)
+    {
+        printf("It is an odd number.");
+    }
+    else {
+        printf("Invalid input!");
+        
+    }
+    return 0;
+}
+problem 2 ans:
+#include<stdio.h>
+int main()
+{
+     int a;
+     scanf("%d",&a);
+     if(a>0)
+     {
+         printf("positive");
+         
+     }
+     else if(a<0)
+     {
+         printf("negative");
+     }
+     else if(a==0)
+     {
+         printf("Zero");
+         
+     }
+     else {
+         printf("Invalid input");
+     }
+    return 0;
+}
+problem 3 ans:
+#include<stdio.h>
+int main()
+{
+      int a,b;
+      scanf("%d%d",&a,&b);
+      if(a>b)
+      {
+          printf("%d",a);
+      }
+      else if(b>a)
+      {
+          printf("%d",b);
+      }
+      else {
+          printf("Invalid input");
+      }
+    return 0;
+}
+problem 4 ans:
+#include<stdio.h>
+int main()
+{
+      int age;
+      scanf("%d",&age);
+      if(age>=18)
+      {
+          printf("Eligible to vote.");
+      }
+      else if(age>0&&age<18)
+      {
+          printf("Not eligible to vote.");
+      }
+      else {
+          printf("Invalid input");
+      }
+      
+return 0;
+}
+problem 5 ans:
+#include<stdio.h>
+int main()
+{
+     int marks;
+     scanf("%d",&marks);
+     if(marks>=40&&marks<=100)
+     {
+         printf("Pass");
+     }
+     else if(marks>0&&marks<40){
+         printf("Fail");
+     }
+     else {
+         printf("Invalid input!");
+     }
+return 0;
+}
+problem 6 ans:
+#include<stdio.h>
+int main()
+{
+      int n;
+      scanf("%d",&n);
+      if(n%5==0)
+      {
+        printf("Yes");  
+      }
+      else if(n%5!=0)
+      {
+          printf("No");
+      }
+      else {
+          printf("Invalid input");
+      }
+return 0;
+}
+problem 7 ans:
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if(a%4==0||a%400==0)
+    {
+        printf("Leap year");
+    }
+    else if(a%100!=0)
+    {
+        printf("Not a leap year");
+        
+    }
+    else {
+        printf("Invalid input");
+    }
+return 0;
+}
+problem 8 ans:
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>=b&&a>=c)
+    {
+        printf("%d",a);
+    }
+    else if(b>=c&&b>=a)
+    {
+        printf("%d",b);
+    }
+    else  {
+        printf("%d",c);
+    }
+return 0;
+}
+problem 9 ans:
+ #include<stdio.h>
+int main()
+{
+    char ch;
+    scanf("%c",&ch);
+    if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+    {
+        printf("vowel");
+    }
+    else if(ch>='a'&&ch<='z')
+    {
+        printf("consonant");
+    }
+    else {
+        printf("invalid input");
+    }
+    return 0;
+}
+
+problem 10 ans:
+#include<stdio.h>
+int main()
+{
+    int temp;
+    scanf("%d",&temp);
+    if(temp>=30)
+    {
+        printf("hot");
+    }
+    else {
+        printf("normal");
+    }
+return 0;
+}
+problem 11 ans:
+#include<stdio.h>
+int main()
+{
+    int temp;
+    scanf("%d",&temp);
+    if(temp>=30)
+    {
+        printf("hot");
+    }
+    else {
+        printf("normal");
+    }
+return 0;
+}
+problem 12 ans:
+#include<stdio.h>
+int main()
+{
+    int salary,bonus;
+    scanf("%d",&salary);
+    if(salary>=20000)
+    {
+        bonus=salary+2000;
+    }
+    else if(salary<20000&&salary>0)
+    {
+        bonus=salary+1000;
+    }
+    else {
+        printf("invalid input ");
+    }
+    printf("%d",bonus);
+    return 0;
+}
+problem 13 ans:
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    if(n%2==0&&n%3==0)
+    {
+        printf("Yes");
+    }
+    else 
+    {
+        printf("No");
+        
+    }
+    return 0;
+}
+problem 14 ans:
+#include<stdio.h>
+int main()
+{
+    int marks;
+    scanf("%d",&marks);
+    if(marks>=90&&marks<=100)
+    {
+        printf("A");
+    }
+    else if(marks>=75&&marks<90)
+    {
+        printf("B");
+    }
+    else if(marks>=50&&marks<75)
+    {
+        printf("C");
+    }
+    else if(marks>50&&marks<0)
+    {
+        printf("Fail");
+    }
+    else {
+        printf("Invalid input!");
+    }
+    return 0;
+}
+problem 15 ans:
+#include<stdio.h>
+int main()
+{
+  int a,b;
+  scanf("%d%d",&a,&b);
+  if(a==b){
+      printf("Equal");
+  }
+  else if (a!=b)
+  {
+      printf("Not Equal");
+  }
+  else
+  {
+      printf("Invalid input");
+  }
+    return 0;
+}
+problem 16 ans:
+#include<stdio.h>
+int main()
+{
+    int units,total_bill;
+    scanf("%d",&units);
+    if(units>0&&units<=100)
+    {
+        total_bill=units*1;
+    }
+    else if(units>100)
+    {
+        total_bill=units*2;
+    }
+    else{
+        printf("Invalid input");
+    }
+    printf("%d",total_bill);
+    return 0;
+}
+
+
