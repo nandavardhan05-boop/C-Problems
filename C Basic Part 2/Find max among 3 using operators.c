@@ -7,13 +7,13 @@ int main()
     {
         printf("%d",a);
     }
-    else if(b>a&&b>c)
+    else if(c>a&&c>b)
     {
-        printf("%d",b);
+        printf("%d",c);
 
     }
     else {
-        printf("%d",c);
+        printf("%d",b);
     }
     return 0;
 }
