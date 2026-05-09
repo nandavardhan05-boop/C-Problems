@@ -1,0 +1,18 @@
+ #include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
+    int data;
+    struct Node* next;
+};
+
+void display(struct Node* head) {
+    struct Node* temp = head;
+
+    if(head == NULL) return;
+
+    do {
+        printf("%d ", temp->data);
+        temp = temp->next;
+    } while(temp != head);
+}
