@@ -1,0 +1,53 @@
+#include <string.h>
+
+char* longestPalindrome(char* s) {
+    
+    int n = strlen(s);
+
+    if(n < 2)
+        return s;
+
+    int start = 0;
+    int maxLen = 1;
+
+    for(int i = 0; i < n; i++) {
+
+        // Odd length palindrome
+        int left = i;
+        int right = i;
+
+        while(left >= 0 && right < n && s[left] == s[right]) {
+
+            int len = right - left + 1;
+
+            if(len > maxLen) {
+                start = left;
+                maxLen = len;
+            }
+
+            left--;
+            right++;
+        }
+
+        // Even length palindrome
+        left = i;
+        right = i + 1;
+
+        while(left >= 0 && right < n && s[left] == s[right]) {
+
+            int len = right - left + 1;
+
+            if(len > maxLen) {
+                start = left;
+                maxLen = len;
+            }
+
+            left--;
+            right++;
+        }
+    }
+
+    s[start + maxLen] = '\0';
+
+    return s + start;
+}
